@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import ToDoListPage from './pages/ToDoListPage'
+import Layout from './layouts'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Layout>
+      <ToDoListPage />
+    </Layout>
   </StrictMode>,
 )
